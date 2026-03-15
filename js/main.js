@@ -124,7 +124,7 @@ async function loadRecentMeetups() {
         <h3 class="card-title">${escapeHTML(m.title)}</h3>
         <p class="card-excerpt">${escapeHTML(m.excerpt)}</p>
         <div class="card-actions">
-          <a href="meetups.html#meetup-${escapeAttr(m.id)}" class="btn btn-secondary">View Recap &amp; Slides</a>
+          <a href="meetups.html#meetup-${escapeAttr(m.id)}" class="btn btn-secondary">View Recap</a>
         </div>
       </article>
     `).join('');

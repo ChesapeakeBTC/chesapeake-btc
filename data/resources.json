@@ -3,18 +3,8 @@
     "topic": "Bitcoin Basics",
     "resources": [
       {
-        "title": "What Is Bitcoin?",
-        "description": "An introduction to Bitcoin, sound money, and why it matters for sovereignty and freedom.",
-        "file": ""
-      }
-    ]
-  },
-  {
-    "topic": "Self-Custody & Security",
-    "resources": [
-      {
-        "title": "Not Your Keys, Not Your Coins",
-        "description": "A practical guide to self-custody — hardware wallets, seed phrases, and why holding your own keys matters.",
+        "title": "What Is Money",
+        "description": "Chapter 1 of My First Bitcoin discusses the history of money and what makes money sound, or not.",
         "file": ""
       }
     ]

@@ -44,6 +44,11 @@ body {
   padding-top: 64px;
 }
 
+/* Offset anchor links for fixed navbar */
+section[id], footer[id] {
+  scroll-margin-top: 72px;
+}
+
 img { max-width: 100%; display: block; }
 a { color: var(--orange); text-decoration: none; transition: color var(--transition); }
 a:hover { color: var(--gold-light); }
@@ -402,6 +407,20 @@ h1, h2, h3, h4 {
 }
 .upcoming-card .upcoming-desc li {
   margin-bottom: 0.2rem;
+}
+.see-more-btn {
+  background: none;
+  border: none;
+  color: var(--orange);
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-family: var(--font-body);
+  padding: 0;
+  margin-top: 0.25rem;
+  text-decoration: underline;
+}
+.see-more-btn:hover {
+  color: var(--gold);
 }
 
 /* ── Meetup Cards ── */

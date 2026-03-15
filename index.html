@@ -29,9 +29,9 @@
 
         <ul class="nav-links" role="list">
           <li><a href="index.html">Home</a></li>
-          <li><a href="meetups.html">Meetups</a></li>
-          <li><a href="resources.html">Resources</a></li>
+          <li><a href="#upcoming-meetup">Meetups</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#resources">Resources</a></li>
 
         </ul>
       </div>
@@ -50,7 +50,7 @@
           <p class="hero-tagline">A marketplace of local products and ideas</p>
           <div class="hero-actions">
             <a href="#upcoming-meetup" class="btn btn-primary">Next Meetup</a>
-            <a href="about.html" class="btn btn-secondary">Our Story</a>
+            <a href="#about" class="btn btn-secondary">About Us</a>
           </div>
         </div>
       </div>
@@ -102,21 +102,25 @@
 
           <!-- UPCOMING MEETUP: Update this description each month with the topic/agenda -->
           <div class="upcoming-desc">
-            <p>Join us for our inaugural meetup and help shape what Chesapeake Bitcoin becomes. Bring questions, bring friends.</p>
-            <p><strong>Welcome to Chesapeake Bitcoin</strong></p>
-            <ul>
-              <li>Who we are</li>
-              <li>What we want to focus on</li>
-              <li>How we can help each other</li>
-            </ul>
-            <p><strong>My First Bitcoin</strong></p>
-            <ul>
-              <li>Chapter 1</li>
-            </ul>
-            <p><strong>Open Discussion</strong></p>
+            <div class="desc-collapsed" id="desc-preview">Join us for our inaugural meetup and help shape what Chesapeake Bitcoin bec...</div>
+            <div class="desc-full" id="desc-full" style="display:none;">
+              <p>Join us for our inaugural meetup and help shape what Chesapeake Bitcoin becomes. Bring questions, bring friends.</p>
+              <p><strong>Welcome to Chesapeake Bitcoin</strong></p>
+              <ul>
+                <li>Who we are</li>
+                <li>What we want to focus on</li>
+                <li>How we can help each other</li>
+              </ul>
+              <p><strong>My First Bitcoin</strong></p>
+              <ul>
+                <li>Chapter 1</li>
+              </ul>
+              <p><strong>Open Discussion</strong></p>
+            </div>
+            <button class="see-more-btn" id="see-more-btn" onclick="toggleDesc()">see more</button>
           </div>
 
-          <a href="meetups.html" class="btn btn-primary">View Past Meetups</a>
+          <a href="#recent-meetups" class="btn btn-primary">View Past Meetups</a>
         </div>
 
       </div>
@@ -165,8 +169,28 @@
             We meet on the <strong>4th Saturday of every month at 2pm</strong> in Chesapeake, Virginia.
             All are welcome, no experience required. Our focus is Bitcoin.
           </p>
+          <p>
+            Find us on Nostr: <span style="color:var(--gold);word-break:break-all;">meetup@chesapeakebtc.org</span><br/>
+            Email: <a href="mailto:info@chesapeakebtc.org" style="color:var(--orange);">info@chesapeakebtc.org</a>
+          </p>
         </article>
 
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- ── Resources ── -->
+    <section class="section" id="resources" aria-labelledby="resources-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Educational Materials</span>
+          <h2 class="section-title" id="resources-heading">Resources</h2>
+          <p class="section-subtitle">Slides and materials from our meetups, organized by topic.</p>
+        </div>
+        <div id="resources-list">
+          <p class="loading-state">Loading resources…</p>
+        </div>
       </div>
     </section>
 
@@ -190,7 +214,7 @@
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="meetups.html">Meetup History</a></li>
-            <li><a href="resources.html">Resources</a></li>
+            <li><a href="#resources">Resources</a></li>
             <li><a href="#about">About</a></li>
           </ul>
         </div>
@@ -201,7 +225,7 @@
           <!-- FOOTER: Update Nostr npub when available -->
           <div class="footer-contact-item">
             <span class="contact-label">Nostr</span>
-            <span class="contact-value" style="font-size:0.78rem;word-break:break-all;">npub_placeholder</span>
+            <span class="contact-value" style="font-size:0.78rem;word-break:break-all;">meetup@chesapeakebtc.org</span>
           </div>
 
           <!-- FOOTER: Update email when active -->
@@ -231,5 +255,21 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script>
+    function toggleDesc() {
+      const preview = document.getElementById('desc-preview');
+      const full = document.getElementById('desc-full');
+      const btn = document.getElementById('see-more-btn');
+      if (full.style.display === 'none') {
+        preview.style.display = 'none';
+        full.style.display = 'block';
+        btn.textContent = 'see less';
+      } else {
+        full.style.display = 'none';
+        preview.style.display = 'block';
+        btn.textContent = 'see more';
+      }
+    }
+  </script>
 </body>
 </html>
