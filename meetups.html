@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Chesapeake Bitcoin meetup history — every month, we gather to learn, share, and build." />
+  <title>Meetup History | Chesapeake Bitcoin · The Causeway</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <header>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="container nav-inner">
+        <a href="index.html" class="nav-logo" aria-label="Chesapeake Bitcoin — The Causeway home">
+          <img src="assets/logo.png" alt="Chesapeake Bitcoin logo" />
+          <span class="nav-logo-text">
+            <span class="logo-name">Chesapeake Bitcoin</span>
+            <span class="logo-sub">The Causeway</span>
+          </span>
+        </a>
+
+        <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="meetups.html">Meetups</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="index.html#about">About</a></li>
+
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ── Page Header ── -->
+    <section class="page-header" aria-labelledby="page-title">
+      <div class="container">
+        <h1 id="page-title">Meetup History</h1>
+        <p>Every month, we gather to learn, share, and build.</p>
+      </div>
+    </section>
+
+    <!-- ── All Meetups ── -->
+    <section class="section" aria-label="All meetups">
+      <div class="container">
+
+        <!--
+          MEETUP HISTORY: All entries are loaded from data/meetups.json
+          To add a new meetup after each gathering:
+            1. Open data/meetups.json
+            2. Add a new object at the TOP of the array (newest first)
+            3. Fill in: id, title, date, excerpt, recap, slides (filename or "")
+            4. If you have slides, drop the PDF into the slides/ folder and set "slides": "filename.pdf"
+        -->
+        <div class="meetup-list" id="all-meetups">
+          <p class="loading-state">Loading meetup history…</p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="footer" id="contact" aria-label="Site footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">
+            <img src="assets/logo.png" alt="Chesapeake Bitcoin logo" />
+            <span class="footer-logo-name">Chesapeake Bitcoin — The Causeway</span>
+          </a>
+          <p class="footer-tagline">A marketplace of local products and ideas</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="meetups.html">Meetup History</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="index.html#about">About</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <div class="footer-contact-item">
+            <span class="contact-label">Nostr</span>
+            <span class="contact-value" style="font-size:0.78rem;word-break:break-all;">npub_placeholder</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="contact-label">Email</span>
+            <a href="mailto:info@chesapeakebtc.org" class="contact-value">info@chesapeakebtc.org</a>
+          </div>
+          <div class="footer-contact-item" style="margin-top:1rem;">
+            <span class="contact-label" style="min-width:auto;margin-right:0.25rem;">Part of</span>
+            <a href="https://757btc.org" target="_blank" rel="noopener" class="contact-value" style="color:var(--gold);">
+              757btc Hampton Roads →
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">© 2025 Chesapeake Bitcoin — The Causeway</p>
+        <p class="footer-community">
+          Hampton Roads Bitcoin community ·
+          <a href="https://757btc.org" target="_blank" rel="noopener">757btc.org</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
