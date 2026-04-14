@@ -31,8 +31,8 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="#upcoming-meetup">Meetups</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#newsletter">Newsletter</a></li>
           <li><a href="#resources">Resources</a></li>
-
         </ul>
       </div>
     </nav>
@@ -58,12 +58,7 @@
 
     <hr class="section-divider" />
 
-    <!-- ══════════════════════════════════════════════════════
-         UPCOMING MEETUP: Update this section each month.
-         Change the date, venue, and description below.
-         The heading comment above each editable field will
-         help you find the right spot quickly.
-    ══════════════════════════════════════════════════════ -->
+    <!-- UPCOMING MEETUP -->
     <section class="section parchment-bg" id="upcoming-meetup" aria-labelledby="upcoming-heading">
       <div class="container">
         <div class="section-header">
@@ -73,17 +68,13 @@
 
         <div class="upcoming-card">
           <div class="meetup-meta">
-
-            <!-- UPCOMING MEETUP: Update the date/time each month -->
             <div class="meta-item">
               <span class="meta-icon" aria-hidden="true">📅</span>
               <div>
-                <div class="meta-value">Saturday, March 28th @ 2pm</div>
+                <div class="meta-value">Saturday, April 25th @ 2pm</div>
                 <div style="font-size:0.8rem;color:var(--muted);margin-top:2px;">4th Saturday of every month</div>
               </div>
             </div>
-
-            <!-- UPCOMING MEETUP: Update venue when confirmed -->
             <div class="meta-item">
               <span class="meta-icon" aria-hidden="true">📍</span>
               <div>
@@ -97,38 +88,32 @@
                 <div style="font-size:0.8rem;color:var(--muted);margin-top:2px;">733 Volvo Pkwy, Unit 320 · Chesapeake, VA 23320</div>
               </div>
             </div>
-
           </div>
 
-          <!-- UPCOMING MEETUP: Update this description each month with the topic/agenda -->
           <div class="upcoming-desc">
-            <div class="desc-collapsed" id="desc-preview">Join us for our inaugural meetup and help shape what Chesapeake Bitcoin bec...</div>
+            <div class="desc-collapsed" id="desc-preview">Join us for our second meetup. Bring questions, bring friends — all are welcome.</div>
             <div class="desc-full" id="desc-full" style="display:none;">
-              <p>Join us for our inaugural meetup and help shape what Chesapeake Bitcoin becomes. Bring questions, bring friends.</p>
-              <p><strong>Welcome to Chesapeake Bitcoin</strong></p>
-              <ul>
-                <li>Who we are</li>
-                <li>What we want to focus on</li>
-                <li>How we can help each other</li>
-              </ul>
+              <p>Join us for our second monthly gathering. Whether you're just getting started or have been down the rabbit hole for years, all are welcome.</p>
               <p><strong>My First Bitcoin</strong></p>
               <ul>
-                <li>Chapter 1</li>
+                <li>Continuing our study of the curriculum</li>
               </ul>
               <p><strong>Open Discussion</strong></p>
+              <ul>
+                <li>What's on your mind?</li>
+              </ul>
             </div>
             <button class="see-more-btn" id="see-more-btn" onclick="toggleDesc()">see more</button>
           </div>
 
           <a href="#recent-meetups" class="btn btn-primary">View Past Meetups</a>
         </div>
-
       </div>
     </section>
 
     <hr class="section-divider" />
 
-    <!-- ── Recent Meetups ── -->
+    <!-- Recent Meetups -->
     <section class="section" aria-labelledby="recent-heading">
       <div class="container">
         <div class="section-header">
@@ -136,12 +121,9 @@
           <h2 class="section-title" id="recent-heading">Recent Meetups</h2>
           <p class="section-subtitle">What we've been learning and building together.</p>
         </div>
-
-        <!-- Meetup cards injected by main.js from data/meetups.json -->
         <div class="cards-grid" id="recent-meetups">
           <p class="loading-state">Loading meetups…</p>
         </div>
-
         <div class="cards-cta">
           <a href="meetups.html" class="btn btn-secondary">View All Meetups →</a>
         </div>
@@ -150,14 +132,13 @@
 
     <hr class="section-divider" />
 
-    <!-- ── About ── -->
+    <!-- About -->
     <section class="section parchment-bg" id="about" aria-labelledby="about-heading">
       <div class="container">
         <div class="section-header">
           <span class="section-label">Who We Are</span>
           <h2 class="section-title" id="about-heading">About The Meetup</h2>
         </div>
-
         <article class="about-section">
           <p>
             We gather monthly to educate, participate, and build. Through open discourse, hands-on
@@ -174,13 +155,76 @@
             Email: <a href="mailto:info@chesapeakebtc.org" style="color:var(--orange);">info@chesapeakebtc.org</a>
           </p>
         </article>
-
       </div>
     </section>
 
     <hr class="section-divider" />
 
-    <!-- ── Resources ── -->
+    <!-- Newsletter -->
+    <section class="section parchment-bg" id="newsletter" aria-labelledby="newsletter-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Daily Intelligence</span>
+          <h2 class="section-title" id="newsletter-heading">The Causeway Daily</h2>
+          <p class="section-subtitle">Your daily guide to Bitcoin in Hampton Roads and beyond.</p>
+        </div>
+        
+        <div class="newsletter-container" style="background: #ffffff; padding: 2rem; border-radius: 14px; border: 2px solid var(--orange); color: #333; line-height: 1.7;">
+          <p style="text-align:center; font-size:0.85rem; color:#888; margin-bottom:1.5rem;">Tuesday, April 14, 2026 · Block 945,040 · ~$74,438</p>
+
+          <h3 style="color:#b45309; margin-bottom:0.5rem;">Local Pulse</h3>
+          <p><strong>Community Corner</strong><br>
+          The 757 is home to thousands of independent shops, restaurants, and service providers. Imagine if even a handful began accepting bitcoin — your morning coffee, your haircut, your favorite lunch spot, all connected in a circular economy where sats stay local. If you run a business in Hampton Roads, we'd love to help you get set up. And if you're a customer, ask your favorite spots: "Do you accept bitcoin?" That one question plants a seed. Let's build the local economy we want to see.</p>
+          
+          <p><strong>Virginia Strategic Reserve</strong><br>
+          Virginia's SB 557 would establish the Commonwealth Strategic Cryptocurrency Reserve Fund, authorizing the state treasurer to invest in bitcoin and qualifying digital assets. The bill passed the Senate General Laws and Technology Committee 13–2, joining a growing list of states moving toward sovereign Bitcoin reserves.<br>
+          <span style="font-size:0.85rem; color:#666;">Source: <a href="https://lis.virginia.gov/bill-details/20261/SB557" target="_blank" rel="noopener">Virginia Legislature — SB 557</a> · <a href="https://bitcoinmagazine.com/news/virginia-advances-bill-for-bitcoin-fund" target="_blank" rel="noopener">Bitcoin Magazine</a></span></p>
+
+          <hr style="border:none; border-top:1px solid rgba(0,0,0,0.1); margin:1.5rem 0;" />
+
+          <h3 style="color:#b45309; margin-bottom:0.5rem;">Bitcoin 101: The Seed Phrase</h3>
+          <p><strong>Fact of the Day:</strong> Your Bitcoin wallet doesn't actually "store" bitcoin. It stores a <em>seed phrase</em> — typically 12 or 24 words generated from the BIP-39 standard — that mathematically derives all of your private keys. Whoever holds these words controls the funds. No company, no bank, no government can reset it for you.</p>
+          <p><strong>Actionable Tip:</strong> Write your seed phrase on paper (or stamp it in metal) and store it somewhere safe and offline. Never type it into a website. Never photograph it. Never store it in cloud notes. Test your backup by restoring it on a separate device before loading significant funds.<br>
+          <span style="font-size:0.85rem; color:#666;">Source: <a href="https://bitcoin.org/en/secure-your-wallet" target="_blank" rel="noopener">bitcoin.org — Securing Your Wallet</a> · <a href="https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki" target="_blank" rel="noopener">BIP-39 Specification</a></span></p>
+
+          <hr style="border:none; border-top:1px solid rgba(0,0,0,0.1); margin:1.5rem 0;" />
+
+          <h3 style="color:#b45309; margin-bottom:0.5rem;">The Wider Network</h3>
+          <p><strong>Freedom Tech</strong><br>
+          The <strong>256 Foundation</strong> funds open-source hardware and software projects aimed at breaking Bitcoin mining free from closed-source control. Current grants include <strong>Mujina</strong>, a next-gen open-source mining firmware, the <strong>Libre Board</strong>, an open ASIC control board, the <strong>Ember One</strong> hashboard, and <strong>Hydra Pool</strong>, a self-hosted mining pool. Together they form a fully open Bitcoin mining stack.<br>
+          <span style="font-size:0.85rem; color:#666;">Source: <a href="https://256foundation.org/grants" target="_blank" rel="noopener">256 Foundation — Grants</a></span></p>
+
+          <p><strong>Product Update</strong><br>
+          <strong>Bitcoin Core v30.0</strong> is the latest release, featuring improvements to mempool policy, P2P networking, and transaction relay. The release continues the project's focus on reliability, privacy, and decentralization.<br>
+          <span style="font-size:0.85rem; color:#666;">Source: <a href="https://bitcoincore.org/en/releases/" target="_blank" rel="noopener">bitcoincore.org — Releases</a> · <a href="https://github.com/bitcoin/bitcoin/releases" target="_blank" rel="noopener">GitHub</a></span></p>
+
+          <p><strong>Market Note</strong><br>
+          Bitcoin pushed roughly 5% higher over the past week to trade near <strong>$74,438</strong>, driven by renewed institutional inflows into spot Bitcoin ETFs and continued sovereign-level interest. On-chain data shows long-term holder supply at multi-year highs.<br>
+          <span style="font-size:0.85rem; color:#666;">Source: <a href="https://mempool.757btc.org" target="_blank" rel="noopener">mempool.757btc.org</a> · <a href="https://bitbo.io" target="_blank" rel="noopener">Bitbo</a></span></p>
+
+          <hr style="border:none; border-top:1px solid rgba(0,0,0,0.1); margin:1.5rem 0;" />
+
+          <h3 style="color:#b45309; margin-bottom:0.5rem;">757 Meetup Schedule</h3>
+          <ul style="padding-left:1.2rem; font-size:0.95rem;">
+            <li><strong>Virginia Beach — Chicho's Pizza</strong> · 1st Wednesday · 7 PM</li>
+            <li><strong>Virginia Beach — Wegmans</strong> · 2nd Saturday · 10 AM</li>
+            <li><strong>Hampton — Capstan Bar</strong> · 2nd Thursday · 6:30 PM</li>
+            <li><strong>Portsmouth — Mile Zero</strong> · 3rd Friday · 7 PM</li>
+            <li><strong>Virginia Beach — Smartmouth Brewing</strong> · 3rd Wednesday · 7 PM</li>
+            <li><strong>Chesapeake — Causeway</strong> · 4th Saturday · 11 AM</li>
+          </ul>
+
+          <p style="text-align:center; font-size:0.85rem; color:#888; margin-top:1.5rem;">
+            <em style="font-size:1rem; color:#333;">The Day Is Our Own.</em><br/>
+            The Causeway Daily · A publication of <a href="index.html" style="color:#b45309;">Chesapeake Bitcoin</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- Resources -->
     <section class="section" id="resources" aria-labelledby="resources-heading">
       <div class="container">
         <div class="section-header">
@@ -196,11 +240,10 @@
 
   </main>
 
-  <!-- ── Footer ── -->
+  <!-- Footer -->
   <footer class="footer" id="contact" aria-label="Site footer">
     <div class="container">
       <div class="footer-grid">
-
         <div class="footer-brand">
           <a href="index.html" class="footer-logo">
             <img src="assets/logo.png" alt="Chesapeake Bitcoin logo" />
@@ -208,32 +251,26 @@
           </a>
           <p class="footer-tagline">A marketplace of local products and ideas</p>
         </div>
-
         <div class="footer-col">
           <h4>Navigate</h4>
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="meetups.html">Meetup History</a></li>
-            <li><a href="#resources">Resources</a></li>
+            <li><a href="#newsletter">Newsletter</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#resources">Resources</a></li>
           </ul>
         </div>
-
         <div class="footer-col">
           <h4>Connect</h4>
-
-          <!-- FOOTER: Update Nostr npub when available -->
           <div class="footer-contact-item">
             <span class="contact-label">Nostr</span>
             <span class="contact-value" style="font-size:0.78rem;word-break:break-all;">meetup@chesapeakebtc.org</span>
           </div>
-
-          <!-- FOOTER: Update email when active -->
           <div class="footer-contact-item">
             <span class="contact-label">Email</span>
             <a href="mailto:info@chesapeakebtc.org" class="contact-value">info@chesapeakebtc.org</a>
           </div>
-
           <div class="footer-contact-item" style="margin-top:1rem;">
             <span class="contact-label" style="min-width:auto;margin-right:0.25rem;">Part of</span>
             <a href="https://757btc.org" target="_blank" rel="noopener" class="contact-value" style="color:var(--gold);">
@@ -241,9 +278,7 @@
             </a>
           </div>
         </div>
-
       </div>
-
       <div class="footer-bottom">
         <p class="copyright">© 2025 Chesapeake Bitcoin — The Causeway</p>
         <p class="footer-community">

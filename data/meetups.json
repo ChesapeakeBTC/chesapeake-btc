@@ -1,1 +1,9 @@
-[]
+[
+  {
+    "id": "2026-03-28",
+    "date": "March 28, 2026",
+    "title": "Inaugural Meetup — Money, Control & Your First Wallet",
+    "excerpt": "We kicked off Chesapeake Bitcoin with a look at how fiat money functions as a system of control, hands-on wallet fundamentals, and live on-chain transactions.",
+    "recap": "Our first gathering brought together curious minds from across Chesapeake and Hampton Roads for an evening that covered a lot of ground. We opened with Andreas Antonopoulos's talk \"Money as a System of Control\" — a sharp breakdown of how fiat money and traditional financial systems are designed not just to move value, but to surveil, restrict, and coerce. The conversation it sparked set the tone for everything that followed.\n\nFrom there we moved into Bitcoin wallet fundamentals: what a wallet actually is (a key manager, not a vault), the difference between custodial and self-custodial setups, seed phrases, and why \"not your keys, not your coins\" isn't just a slogan. We talked through the BIP-39 standard, how 12 or 24 words mathematically derive all of your private keys, and what proper seed backup actually looks like.\n\nWe closed with live on-chain transactions — watching real bitcoin move on the blockchain, reading a mempool explorer, and understanding what miners are actually confirming. Seeing the transaction propagate in real time made the abstract click for a lot of folks in the room.\n\nGreat turnout for a first meetup. The Day Is Our Own."
+  }
+]

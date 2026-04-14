@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chesapeake Bitcoin — The Causeway | Flyer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg:       #1B2A4A;
+      --surface:  #243352;
+      --orange:   #E8923A;
+      --purple:   #7B5EA7;
+      --parchment:#F5EDD6;
+      --muted:    #A89F8C;
+      --green:    #5C7A4E;
+      --white:    #FFFFFF;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #e0e0e0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      padding: 2rem;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .flyer {
+      width: 8.5in;
+      min-height: 11in;
+      background: var(--bg);
+      color: var(--parchment);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Decorative diagonal accent */
+    .flyer::before {
+      content: '';
+      position: absolute;
+      top: -80px;
+      right: -80px;
+      width: 320px;
+      height: 320px;
+      background: var(--orange);
+      opacity: 0.08;
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .flyer::after {
+      content: '';
+      position: absolute;
+      bottom: -100px;
+      left: -60px;
+      width: 400px;
+      height: 400px;
+      background: var(--purple);
+      opacity: 0.07;
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    /* Top orange bar */
+    .top-bar {
+      height: 6px;
+      background: linear-gradient(90deg, var(--orange), var(--purple));
+    }
+
+    /* Header / Logo area */
+    .header {
+      padding: 2rem 3rem 1.2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .logo {
+      width: 90px;
+      height: 90px;
+      object-fit: contain;
+      margin-bottom: 1rem;
+      filter: drop-shadow(0 4px 16px rgba(232,146,58,0.25));
+    }
+
+    .brand-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.6rem;
+      font-weight: 900;
+      color: var(--parchment);
+      line-height: 1.1;
+      letter-spacing: -0.5px;
+    }
+
+    .brand-name span {
+      color: var(--orange);
+    }
+
+    .brand-sub {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--purple);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-top: 0.4rem;
+    }
+
+    /* Divider */
+    .divider {
+      width: 60px;
+      height: 3px;
+      background: var(--orange);
+      margin: 1rem auto;
+      border-radius: 2px;
+    }
+
+    /* Main content */
+    .content {
+      padding: 0 3.5rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 1.4rem;
+    }
+
+    /* Schedule block */
+    .schedule-block {
+      background: var(--surface);
+      border: 1px solid rgba(232,146,58,0.25);
+      border-left: 4px solid var(--orange);
+      border-radius: 8px;
+      padding: 2rem 2.5rem;
+      text-align: center;
+    }
+
+    .schedule-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 0.8rem;
+    }
+
+    .schedule-when {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--parchment);
+      line-height: 1.2;
+    }
+
+    .schedule-detail {
+      font-size: 1rem;
+      color: var(--muted);
+      margin-top: 0.5rem;
+    }
+
+    .schedule-detail strong {
+      color: var(--parchment);
+    }
+
+    /* Mission statement */
+    .mission {
+      text-align: center;
+      padding: 0 1rem;
+    }
+
+    .mission p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: var(--parchment);
+      opacity: 0.9;
+    }
+
+    /* Tags / bullets */
+    .tags {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .tag {
+      border: 1px solid rgba(232,146,58,0.4);
+      color: var(--parchment);
+      padding: 0.45rem 1.1rem;
+      border-radius: 99px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+
+    .tag.orange { border-color: var(--orange); color: var(--orange); }
+    .tag.purple { border-color: var(--purple); color: #b39ddb; }
+
+    /* All welcome banner */
+    .welcome-banner {
+      background: linear-gradient(135deg, rgba(232,146,58,0.12), rgba(123,94,167,0.12));
+      border: 1px solid rgba(232,146,58,0.2);
+      border-radius: 8px;
+      padding: 1.25rem 2rem;
+      text-align: center;
+      font-size: 1rem;
+      color: var(--parchment);
+      line-height: 1.6;
+    }
+
+    .welcome-banner strong {
+      color: var(--orange);
+    }
+
+    /* Website / CTA */
+    .cta {
+      text-align: center;
+      padding: 1.5rem 0 0.5rem;
+    }
+
+    .cta-url {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--orange);
+      letter-spacing: 1px;
+      display: block;
+      margin-bottom: 0.4rem;
+    }
+
+    .cta-sub {
+      font-size: 0.82rem;
+      color: var(--muted);
+      letter-spacing: 1px;
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: auto;
+      padding: 1.5rem 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid rgba(245,237,214,0.1);
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
+    .footer-nostr {
+      color: #b39ddb;
+      font-size: 0.75rem;
+    }
+
+    /* Bottom bar */
+    .bottom-bar {
+      height: 6px;
+      background: linear-gradient(90deg, var(--purple), var(--orange));
+    }
+
+    /* Print styles */
+    @media print {
+      *, *::before, *::after {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        color-adjust: exact !important;
+      }
+      body { background: none; padding: 0; }
+      .flyer { width: 100%; min-height: 100vh; background: #1B2A4A !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="flyer">
+    <div class="top-bar"></div>
+
+    <div class="header">
+      <img class="logo" src="assets/logo.png" alt="Chesapeake Bitcoin — The Causeway logo" />
+      <div class="brand-name">Chesapeake <span>Bitcoin</span></div>
+      <div class="brand-sub">The Causeway</div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="content">
+
+      <div class="schedule-block">
+        <div class="schedule-label">Monthly Meetup</div>
+        <div class="schedule-when">Every 4th Saturday<br>at 2:00 PM</div>
+        <div class="schedule-detail">Accordo Chiropractic &nbsp;·&nbsp; <strong>Chesapeake, Virginia</strong></div>
+      </div>
+
+      <div class="mission">
+        <p>We gather monthly to educate, participate, and build. Through open discourse, hands-on learning, and active support for local commerce, we help families, individuals, and small businesses throughout Hampton Roads engage with the free and sovereign technologies shaping our future.</p>
+      </div>
+
+      <div class="welcome-banner">
+        <strong>All are welcome.</strong> No experience required.<br>
+        Bring questions, bring friends.
+      </div>
+
+      <div class="cta">
+        <span class="cta-url">chesapeakebtc.org</span>
+        <div class="cta-sub">LEARN MORE &nbsp;·&nbsp; STAY CONNECTED &nbsp;·&nbsp; FIND US ON NOSTR</div>
+        <div class="cta-sub" style="margin-top:0.5rem;">email: info@chesapeakebtc.org</div>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <span>Part of the 757btc Hampton Roads community → 757btc.org</span>
+      <span class="footer-nostr">nostr: meetup@chesapeakebtc.org</span>
+    </div>
+
+    <div class="bottom-bar"></div>
+  </div>
+</body>
+</html>
