@@ -194,6 +194,8 @@ async function loadResources() {
       const cards = (topic.resources || []).map(r => {
         const dlBtn = r.file
           ? `<a href="slides/${escapeAttr(r.file)}" class="btn btn-secondary" target="_blank" rel="noopener" download>Download PDF →</a>`
+          : r.url
+          ? `<a href="${escapeHTML(r.url)}" class="btn btn-secondary" target="_blank" rel="noopener">Visit Site →</a>`
           : `<span class="btn btn-outline" style="opacity:0.45;cursor:default;">Coming Soon</span>`;
         return `
           <div class="resource-card">

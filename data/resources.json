@@ -8,5 +8,25 @@
         "file": ""
       }
     ]
+  },
+  {
+    "topic": "Educational Sites",
+    "resources": [
+      {
+        "title": "Learn Me a Bitcoin",
+        "description": "A technical deep-dive into how Bitcoin actually works — from transactions and blocks to the scripting language and cryptography. Great for those who want to understand the protocol, not just use it.",
+        "url": "https://learnmeabitcoin.com/"
+      },
+      {
+        "title": "My First Bitcoin",
+        "description": "An open-source Bitcoin education curriculum built for anyone starting from scratch. Covers money, wallets, keys, and sovereignty in plain language.",
+        "url": "https://myfirstbitcoin.org/"
+      },
+      {
+        "title": "Operation Bitcoin",
+        "description": "For Service Members, Veterans, and their Family. Bitcoin education and resources tailored to the military community.",
+        "url": "https://operationbitcoin.io/"
+      }
+    ]
   }
 ]
