@@ -149,3 +149,4 @@ The footer line:
 | Issue | Date | Topics Covered |
 |-------|------|----------------|
 | #1 | April 14, 2026 | Community Corner / VA SB 557; Seed Phrases (BIP-39); 256 Foundation grants; Bitcoin Core v30.0; Market ~$74,438 |
+| #2 | April 15, 2026 | Community Corner (buying local); The Mempool; HRF BDF 26 projects; Bitcoin Core v30.2; Market ~$74,199 block 945,188 |
