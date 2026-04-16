@@ -52,6 +52,17 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.style.overflow = '';
       });
     });
+
+    // Close menu on scroll attempt (touchmove or wheel)
+    function closeMenuOnScroll() {
+      if (navLinks.classList.contains('open')) {
+        hamburger.classList.remove('open');
+        navLinks.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+    }
+    window.addEventListener('wheel', closeMenuOnScroll, { passive: true });
+    window.addEventListener('touchmove', closeMenuOnScroll, { passive: true });
   }
 
   // "Contact" nav link → smooth scroll to footer
