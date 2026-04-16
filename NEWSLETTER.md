@@ -150,3 +150,14 @@ The footer line:
 |-------|------|----------------|
 | #1 | April 14, 2026 | Community Corner / VA SB 557; Seed Phrases (BIP-39); 256 Foundation grants; Bitcoin Core v30.0; Market ~$74,438 |
 | #2 | April 15, 2026 | Community Corner (buying local); The Mempool; HRF BDF 26 projects; Bitcoin Core v30.2; Market ~$74,199 block 945,188 |
+| #3 | April 16, 2026 | Virginia HB 798 (unclaimed crypto held in-kind); Difficulty Adjustment; OpenSats 17th wave; Core Lightning v26.04 rc3 (splicing); Market ~$74,530 block 945,310 |
+
+---
+
+## Approval & Commit Workflow
+
+The newsletter is generated daily at 6am by a cron agent. It sends a draft to Nick via Matrix and waits for approval.
+
+**If Nick replies "commit" or "approved":** The cron session handles the commit — writes index.html, updates this Issue Log, commits to main, and confirms back with the hash. Nick then pushes.
+
+**If the cron session has already ended** (timed out before Nick replied): The main agent (Flux) should check the Matrix session history from the cron run that morning, find the HTML block in the draft, and use that — not write a new newsletter from scratch. Look for the message sent around 6am from the cron agent. The subject line will be "THE CAUSEWAY DAILY — Issue #[N]".
