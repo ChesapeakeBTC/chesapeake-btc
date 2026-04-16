@@ -154,10 +154,10 @@ The footer line:
 
 ---
 
-## Approval & Commit Workflow
+## Commit Workflow
 
-The newsletter is generated daily at 6am by a cron agent. It sends a draft to Nick via Matrix and waits for approval.
+The newsletter is generated daily at 6am by a cron agent (Opus). It researches, writes, commits to main, and notifies Nick via Matrix with the commit hash. Nick just runs `git push origin main`.
 
-**If Nick replies "commit" or "approved":** The cron session handles the commit — writes index.html, updates this Issue Log, commits to main, and confirms back with the hash. Nick then pushes.
+**The cron agent owns the commit.** The main agent (Flux) must not re-draft or re-commit the newsletter. If Nick says "commit" and the cron already ran, check git log — it's already there.
 
-**If the cron session has already ended** (timed out before Nick replied): The main agent (Flux) should check the Matrix session history from the cron run that morning, find the HTML block in the draft, and use that — not write a new newsletter from scratch. Look for the message sent around 6am from the cron agent. The subject line will be "THE CAUSEWAY DAILY — Issue #[N]".
+**If the cron job failed** (check `openclaw cron list` for error status): Only then should Flux step in, draft a new issue using the spec above, commit, and notify Nick.
