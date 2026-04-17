@@ -51,7 +51,7 @@ This section is about Hampton Roads — Chesapeake, Virginia Beach, Norfolk, Por
 One educational item per issue. Rotate through foundational topics so readers build knowledge over time. Each entry has two parts:
 
 - **Fact of the Day** — a clear, accurate explanation of one Bitcoin concept (wallets, keys, seed phrases, nodes, mining, mempool, UTXOs, Lightning, multisig, etc.)
-- **Actionable Tip** — something the reader can do today with this knowledge
+- **Action Item** — something the reader can do today with this knowledge. **This is mandatory — every issue must include a concrete, specific action.** Never omit it. Never make it vague ("learn more about Bitcoin" is not an action). Give the reader one thing they can do right now: download a wallet, run a command, visit a specific page, check their seed phrase backup, etc.
 
 Source every claim. Preferred sources: bitcoin.org, BIPs (github.com/bitcoin/bips), bitcoincore.org, learnmeabitcoin.com, myfirstbitcoin.org.
 
