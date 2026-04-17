@@ -151,6 +151,7 @@ The footer line:
 | #1 | April 14, 2026 | Community Corner / VA SB 557; Seed Phrases (BIP-39); 256 Foundation grants; Bitcoin Core v30.0; Market ~$74,438 |
 | #2 | April 15, 2026 | Community Corner (buying local); The Mempool; HRF BDF 26 projects; Bitcoin Core v30.2; Market ~$74,199 block 945,188 |
 | #3 | April 16, 2026 | Virginia HB 798 (unclaimed crypto held in-kind); Difficulty Adjustment; OpenSats 17th wave; Core Lightning v26.04 rc3 (splicing); Market ~$74,530 block 945,310 |
+| #4 | April 17, 2026 | VB Farmers Market 50th Birthday; Running a Full Node; Stacked self-custodial Lightning wallet (NZ); Bitcoin Core v31.0 rc4; Market ~$75,806 block 945,469 |
 
 ---
 
