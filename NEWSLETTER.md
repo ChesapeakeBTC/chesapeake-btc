@@ -59,13 +59,13 @@ Do not repeat topics across consecutive issues. Keep a mental note of what was c
 
 ### 3. The Wider Network
 
-Three sub-items:
+Three sub-items. **Every sub-item must end with a source citation** using the standard HTML format (see HTML Output Format below). No exceptions.
 
 **Freedom Tech** — news from the broader Bitcoin and freedom technology ecosystem. Projects, grants, tools, or people advancing open-source Bitcoin infrastructure, financial sovereignty, or human rights through Bitcoin. Preferred sources: 256foundation.org, hrf.org, nostr.com, opensats.org, bitcoinmagazine.com, GitHub releases.
 
-**Product Update** — a recent development in Bitcoin software or protocol. Bitcoin Core releases, wallet updates, Lightning protocol changes, mining software, etc. Must be an actual released or announced update — never speculative. Source: bitcoincore.org, github.com/bitcoin/bitcoin, lightning.network.
+**Product Update** — a recent development in Bitcoin software or protocol. Bitcoin Core releases, wallet updates, Lightning protocol changes, mining software, etc. Must be an actual released or announced update — never speculative. Preferred sources: bitcoincore.org, github.com/bitcoin/bitcoin, lightning.network.
 
-**Market Note** — brief, factual market context. Price, on-chain trends, long-term holder data. No speculation, no price predictions, no altcoin comparisons. Sources: mempool.757btc.org, bitbo.io.
+**Market Note** — brief, factual market context. Price, on-chain trends, long-term holder data. No speculation, no price predictions, no altcoin comparisons. Preferred sources: mempool.757btc.org, bitbo.io.
 
 ### 4. 757 Meetup Schedule
 
@@ -157,8 +157,14 @@ The footer line:
 
 ## Commit Workflow
 
-The newsletter is generated daily at 6am by a cron agent (Opus). It researches, writes, commits to main, and notifies Nick via Matrix with the commit hash. Nick just runs `git push origin main`.
+The newsletter is generated daily at 6am by a cron agent (Opus). The workflow is:
 
-**The cron agent owns the commit.** The main agent (Flux) must not re-draft or re-commit the newsletter. If Nick says "commit" and the cron already ran, check git log — it's already there.
+1. **Cron agent drafts the issue** — researches, writes, and updates `index.html` locally
+2. **Cron agent notifies Nick via Matrix** — sends the full draft HTML in the message for review, plus a summary of sources used
+3. **Nick reviews and approves** — Nick replies "approve" (or gives feedback for a revision)
+4. **On approval, cron agent commits** — commits to main and replies with the commit hash
+5. **Nick pushes** — runs `git push origin main`
 
-**If the cron job failed** (check `openclaw cron list` for error status): Only then should Flux step in, draft a new issue using the spec above, commit, and notify Nick.
+**No commit happens without Nick's approval.** The cron agent must wait for an explicit "approve" reply before committing. If Nick gives feedback, revise and re-send the draft for another review pass.
+
+**The cron agent owns the draft-review-commit loop.** The main agent (Flux) must not re-draft or re-commit unless the cron job is confirmed failed (check `openclaw cron list` for error status).
