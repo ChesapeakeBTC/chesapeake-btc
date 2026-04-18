@@ -152,6 +152,7 @@ The footer line:
 | #2 | April 15, 2026 | Community Corner (buying local); The Mempool; HRF BDF 26 projects; Bitcoin Core v30.2; Market ~$74,199 block 945,188 |
 | #3 | April 16, 2026 | Virginia HB 798 (unclaimed crypto held in-kind); Difficulty Adjustment; OpenSats 17th wave; Core Lightning v26.04 rc3 (splicing); Market ~$74,530 block 945,310 |
 | #4 | April 17, 2026 | VB Farmers Market 50th Birthday; Running a Full Node; Stacked self-custodial Lightning wallet (NZ); Bitcoin Core v31.0 rc4; Market ~$75,806 block 945,469 |
+| #5 | April 18, 2026 | Community Corner (Causeway meetup preview); UTXOs; Bitcoin 2026 Open Source Pass deadline; BTCPay Server v2.3.7; Market ~$76,331 block 945,597 |
 
 ---
 
