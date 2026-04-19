@@ -153,6 +153,7 @@ The footer line:
 | #3 | April 16, 2026 | Virginia HB 798 (unclaimed crypto held in-kind); Difficulty Adjustment; OpenSats 17th wave; Core Lightning v26.04 rc3 (splicing); Market ~$74,530 block 945,310 |
 | #4 | April 17, 2026 | VB Farmers Market 50th Birthday; Running a Full Node; Stacked self-custodial Lightning wallet (NZ); Bitcoin Core v31.0 rc4; Market ~$75,806 block 945,469 |
 | #5 | April 18, 2026 | Community Corner (Causeway meetup preview); UTXOs; Bitcoin 2026 Open Source Pass deadline; BTCPay Server v2.3.7; Market ~$76,331 block 945,597 |
+| #6 | April 19, 2026 | Community Corner (circular economy / local spending); Lightning Network; MIT Bitcoin Expo 2026; Sparrow Wallet v2.2.0; Market ~$75,053 block 945,755 |
 
 ---
 
