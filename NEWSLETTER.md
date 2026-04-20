@@ -154,6 +154,7 @@ The footer line:
 | #4 | April 17, 2026 | VB Farmers Market 50th Birthday; Running a Full Node; Stacked self-custodial Lightning wallet (NZ); Bitcoin Core v31.0 rc4; Market ~$75,806 block 945,469 |
 | #5 | April 18, 2026 | Community Corner (Causeway meetup preview); UTXOs; Bitcoin 2026 Open Source Pass deadline; BTCPay Server v2.3.7; Market ~$76,331 block 945,597 |
 | #6 | April 19, 2026 | Community Corner (circular economy / local spending); Lightning Network; MIT Bitcoin Expo 2026; Sparrow Wallet v2.2.0; Market ~$75,053 block 945,755 |
+| #7 | April 20, 2026 | Community Corner (Causeway meetup April 25 preview); Proof of Work; 256 Foundation Assembling Freedom #24 (Stratum V2/DIY mining); Blockstream Jade 5.2.0 Lightning; Market ~$75,204 block 945,914 |
 
 ---
 
