@@ -31,7 +31,6 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="#upcoming-meetup">Meetups</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#newsletter">Newsletter</a></li>
           <li><a href="#resources">Resources</a></li>
         </ul>
       </div>
@@ -71,7 +70,7 @@
             <div class="meta-item">
               <span class="meta-icon" aria-hidden="true">📅</span>
               <div>
-                <div class="meta-value">Saturday, April 25th @ 2pm</div>
+                <div class="meta-value">Saturday, July 25th @ 2pm</div>
                 <div style="font-size:0.8rem;color:var(--muted);margin-top:2px;">4th Saturday of every month</div>
               </div>
             </div>
@@ -91,20 +90,20 @@
           </div>
 
           <div class="upcoming-desc">
-            <div class="desc-collapsed" id="desc-preview">Join us for our second meetup. Bring questions, bring friends - all are welcome.</div>
+            <div class="desc-collapsed" id="desc-preview">Join us tomorrow for self-custody practices, hardware wallets, and current Bitcoin topics. Bring questions, bring friends - all are welcome.</div>
             <div class="desc-full" id="desc-full" style="display:none;">
-              <p>Join us for our second monthly gathering. Whether you're just getting started or have been down the rabbit hole for years, all are welcome.</p>
-              <p><strong>My First Bitcoin</strong></p>
+              <p>Join us tomorrow for our July gathering. Whether you're setting up your first wallet or tightening up an existing stack, all are welcome.</p>
+              <p><strong>Self-Custody Practices</strong></p>
               <ul>
-                <li>Continuing our study of the curriculum</li>
+                <li>Seed phrase storage, backup habits, and practical threat models</li>
               </ul>
-              <p><strong>Attack Vectors</strong></p>
+              <p><strong>Hardware Wallets</strong></p>
               <ul>
-                <li>How to avoid scams</li>
+                <li>Device options, setup flow, passphrases, and safer signing habits</li>
               </ul>
-              <p><strong>Open Discussion</strong></p>
+              <p><strong>Current Topics</strong></p>
               <ul>
-                <li>What's on your mind?</li>
+                <li>Open discussion on what is happening across Bitcoin, mining, privacy, and local adoption</li>
               </ul>
             </div>
             <button class="see-more-btn" id="see-more-btn" onclick="toggleDesc()">see more</button>
@@ -162,68 +161,6 @@
       </div>
     </section>
 
-    <hr class="section-divider" />
-
-    <!-- Newsletter -->
-    <section class="section parchment-bg" id="newsletter" aria-labelledby="newsletter-heading">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-label">Daily Intelligence</span>
-          <h2 class="section-title" id="newsletter-heading">The Causeway Daily</h2>
-          <p class="section-subtitle">Your daily guide to Bitcoin in Hampton Roads and beyond.</p>
-        </div>
-
-        <div class="newsletter-container" style="background: #ffffff; padding: 2rem; border-radius: 14px; border: 2px solid var(--orange); color: #333; line-height: 1.7;">
-          <p style="text-align:center; font-size:0.85rem; color:#888; margin-bottom:1.5rem;">Monday, April 20, 2026 · Block 945,914 · ~$75,204</p>
-
-          <h3 style="color:#b45309; margin-bottom:0.5rem;">🏘️ Local Pulse</h3>
-          <p><strong>Community Corner</strong><br>
-          Five days out from our next Causeway meetup and a good morning to think about what we're actually building here. The word "meetup" undersells it. What happens when a dozen people in Chesapeake sit in a room and talk honestly about money, sovereignty, and local commerce isn't just socializing. It's infrastructure. Every conversation about self-custody is one more household that doesn't need permission to access their savings. Every business owner who learns about Lightning payments is one more vendor who can cut out the payment processor. We're not waiting for institutions to figure this out. We're doing it ourselves, one Saturday at a time. The Causeway meets this Saturday, April 25, at 2 p.m. at Accordo Chiropractic on Volvo Parkway in Chesapeake. We'll be continuing our study of the My First Bitcoin curriculum and talking through common attack vectors and scams. Bring questions, bring a friend, bring something to trade if you want. All are welcome.</p>
-
-          <hr style="border:none; border-top:1px solid rgba(0,0,0,0.1); margin:1.5rem 0;" />
-
-          <h3 style="color:#b45309; margin-bottom:0.5rem;">🎓 Bitcoin 101: Proof of Work</h3>
-          <p><strong>Fact of the Day:</strong> Every ten minutes, thousands of machines around the world race to solve the same puzzle. The puzzle itself is simple to describe: find a number that, when combined with the block's data and run through the SHA-256 hash function twice, produces a result below a certain target. That target is the difficulty. The lower the target, the harder it is to find a valid hash, and the more guesses (called "hashes") miners must attempt. There's no shortcut. No formula. Just raw computation, trillions of attempts per second across the network. The miner who finds a valid hash first gets to propose the next block and earns the block subsidy (currently 3.125 BTC) plus transaction fees. This is Proof of Work. It converts real-world energy into digital security. An attacker wanting to rewrite Bitcoin's history would need to outpace the entire network's hashrate, which currently sits above 1,000 exahashes per second. That's what makes Bitcoin's ledger trustworthy without trusting anyone. The energy isn't wasted. It's the wall.</p>
-          <p><strong>Action Item:</strong> Visit <a href="https://mempool.757btc.org" target="_blank" rel="noopener">mempool.757btc.org</a> and click on the most recent block. Look at the block hash at the top — notice how it starts with a long string of zeros. That's Proof of Work made visible. The more leading zeros, the harder it was to find. Then check the "nonce" field: that's the number the miner adjusted billions of times until the hash came out below the target. You're looking at the exact solution to the puzzle that secured that block.<br>
-          <span style="font-size:0.85rem; color:#666;">Source: <a href="https://learnmeabitcoin.com/technical/mining/" target="_blank" rel="noopener">LearnMeABitcoin — Mining</a> · <a href="https://github.com/bitcoin/bips/blob/master/bip-0022.mediawiki" target="_blank" rel="noopener">BIP-22: getblocktemplate</a></span></p>
-
-          <hr style="border:none; border-top:1px solid rgba(0,0,0,0.1); margin:1.5rem 0;" />
-
-          <h3 style="color:#b45309; margin-bottom:0.5rem;">🌐 The Wider Network</h3>
-          <p><strong>Freedom Tech</strong><br>
-          The 256 Foundation published Assembling Freedom #24 last week, titled "Bitcoin Mining Renaissance: Stratum V2, Nonce Space, and the DIY Miner Comeback." The newsletter digs into Stratum V2's role in decentralizing mining by letting individual miners construct their own block templates instead of relying on pool operators to decide which transactions get included. It also covers nonce space exhaustion — the technical challenge of modern ASICs burning through the available nonce range faster than new blocks arrive — and the growing movement of hobbyist miners building home setups with open-source firmware. The 256 Foundation has been one of the most consistent voices pushing for free and open-source mining infrastructure, and their weekly newsletter is worth following if you care about who controls block production.<br>
-          <span style="font-size:0.85rem; color:#666;">Source: <a href="https://news.256foundation.org/" target="_blank" rel="noopener">256 Foundation — Assembling Freedom #24</a></span></p>
-
-          <p><strong>Product Update</strong><br>
-          Blockstream's Jade hardware wallet can now send and receive Lightning payments, making it the first hardware wallet to bridge cold storage and the Lightning Network. Version 5.2.0 of the Blockstream app uses atomic swaps between Lightning and the Liquid sidechain to convert incoming Lightning payments into Liquid bitcoin (L-BTC) secured by the Jade device's offline keys. Sending works in reverse: the app swaps L-BTC for Lightning liquidity, with Jade signing the transaction before funds leave the wallet. It's a meaningful step toward solving a real tension in Bitcoin self-custody — hardware wallets are secure but slow, Lightning is fast but typically requires hot wallets. Blockstream is trying to give you both.<br>
-          <span style="font-size:0.85rem; color:#666;">Source: <a href="https://bitcoinmagazine.com/news/blockstream-jade-wallet-lightning-network" target="_blank" rel="noopener">Bitcoin Magazine — Blockstream Jade Lightning</a></span></p>
-
-          <p><strong>Market Note</strong><br>
-          Bitcoin is trading around $75,204 at block 945,914. The 24-hour range sits between $73,742 and $76,278. Fees remain at rock bottom: 1 sat/vB across all priority tiers, with just 1,443 transactions in the mempool and less than one block needed to clear the backlog. Hashrate is at 1,071 EH/s. Difficulty epoch 470 is underway at 135.59T with an estimated +6.76% adjustment coming around May 1, reversing last epoch's −2.43% drop. Supply stands at 20,018,469 BTC mined — 95.33% of the 21 million cap. One dollar buys you 1,330 sats.<br>
-          <span style="font-size:0.85rem; color:#666;">Source: <a href="https://bitbo.io" target="_blank" rel="noopener">Bitbo.io</a> · <a href="https://mempool.757btc.org" target="_blank" rel="noopener">mempool.757btc.org</a></span></p>
-
-          <hr style="border:none; border-top:1px solid rgba(0,0,0,0.1); margin:1.5rem 0;" />
-
-          <h3 style="color:#b45309; margin-bottom:0.5rem;">📅 757 Meetup Schedule</h3>
-          <ul style="padding-left:1.2rem; font-size:0.95rem;">
-            <li><strong>Virginia Beach - Chicho's Strawbridge</strong> · 1st Wednesday · 7 PM</li>
-            <li><strong>Virginia Beach - Wegmans Town Center</strong> · 2nd Saturday · 10 AM</li>
-            <li><strong>Hampton - Capstan Bar</strong> · 2nd Thursday · 6:30 PM</li>
-            <li><strong>Portsmouth - Mile Zero</strong> · 3rd Friday · 7 PM</li>
-            <li><strong>Virginia Beach - Smartmouth Pilot House</strong> · 3rd Wednesday · 7 PM</li>
-            <li><strong>Chesapeake - The Causeway</strong> · 4th Saturday · 2 PM</li>
-          </ul>
-
-          <p style="text-align:center; font-size:0.85rem; color:#888; margin-top:1.5rem;">
-            <em style="font-size:1rem; color:#333;">The Day Is Our Own.</em><br/>
-            The Causeway Daily · A publication of <a href="index.html" style="color:#b45309;">Chesapeake Bitcoin</a>
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <hr class="section-divider" />
-
     <!-- Resources -->
     <section class="section" id="resources" aria-labelledby="resources-heading">
       <div class="container">
@@ -256,7 +193,6 @@
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="meetups.html">Meetup History</a></li>
-            <li><a href="#newsletter">Newsletter</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#resources">Resources</a></li>
           </ul>
