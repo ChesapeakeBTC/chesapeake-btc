@@ -1,5 +1,12 @@
 [
   {
+    "id": "2026-07-25",
+    "date": "July 25, 2026",
+    "title": "Self-Custody Practices, Hardware Wallets & Current Topics",
+    "excerpt": "We discussed self-custody practices, hardware wallets, and current Bitcoin topics, with practical guidance for people setting up their first wallet or tightening an existing stack.",
+    "recap": "Our July gathering focused on self-custody practices, hardware wallets, and current Bitcoin topics. We covered seed phrase storage, backup habits, practical threat models, device options, setup flow, passphrases, and safer signing habits. We closed with an open discussion on Bitcoin, mining, privacy, and local adoption."
+  },
+  {
     "id": "2026-03-28",
     "date": "March 28, 2026",
     "title": "Inaugural Meetup — Money, Control & Your First Wallet",

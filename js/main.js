@@ -120,8 +120,8 @@ async function loadRecentMeetups() {
 
   try {
     const meetups = await fetchJSON('meetups.json');
-    // Sort newest first, take last 3
-    const sorted = [...meetups].sort((a, b) => (b.date > a.date ? 1 : -1));
+    // Sort newest first by ISO-formatted meetup ID, then take the first 3
+    const sorted = [...meetups].sort((a, b) => b.id.localeCompare(a.id));
     const recent = sorted.slice(0, 3);
 
     if (recent.length === 0) {
@@ -157,7 +157,7 @@ async function loadAllMeetups() {
 
   try {
     const meetups = await fetchJSON('meetups.json');
-    const sorted = [...meetups].sort((a, b) => (b.date > a.date ? 1 : -1));
+    const sorted = [...meetups].sort((a, b) => b.id.localeCompare(a.id));
 
     if (sorted.length === 0) {
       container.innerHTML = '<div class="empty-state"><p>No meetups recorded yet. Our first is on the way!</p></div>';
